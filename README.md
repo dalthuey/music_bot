@@ -1,5 +1,5 @@
 
-# Music Production Chatbot 🎧
+# Music Bot 🎧
 
 ## Overview
 This project is a Music Production Chatbot powered by OpenAI's GPT-3.5-turbo. The bot is designed to assist users with music production topics such as mixing, mastering, DAWs, sound design, and music theory. It can be used via a command-line interface (CLI) or integrated with Telegram.
@@ -17,7 +17,7 @@ This project is a Music Production Chatbot powered by OpenAI's GPT-3.5-turbo. Th
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/music_bot.git
+   git clone https://github.com/dalthuey/music_bot.git
    cd music_bot
    ```
 
@@ -28,8 +28,8 @@ This project is a Music Production Chatbot powered by OpenAI's GPT-3.5-turbo. Th
 
 3. Create a `.env` file:
    ```plaintext
-   OPENAI_API_KEY=your_openai_api_key
-   TELEGRAM_TOKEN=your_telegram_bot_token
+   OPENAI_API_KEY=<Your OpenAI API Key>
+   TELEGRAM_TOKEN=<Your Telegram Bot Token>
    ```
 
 4. Generate `requirements.txt` (if needed):
