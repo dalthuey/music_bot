@@ -68,14 +68,14 @@ def start_cli():
 
 # Main Function
 if __name__ == "__main__":
-    print("Select an option to start the bot:")
-    print("1. Command-line Interface (CLI)")
-    print("2. Telegram Bot")
+    # Get mode from environment variable or default to Telegram
+    mode = os.getenv("BOT_MODE", "telegram").lower()
 
-    choice = input("\nEnter 1 or 2: ").strip()
-    if choice == "1":
+    if mode == "cli":
+        print("🎧 Running in CLI mode...")
         start_cli()
-    elif choice == "2":
+    elif mode == "telegram":
+        print("🤖 Running in Telegram mode...")
         start_telegram_bot()
     else:
-        print("Invalid choice. Exiting.")
+        print(f"Error: Invalid BOT_MODE '{mode}'. Please set BOT_MODE to 'cli' or 'telegram'.")
