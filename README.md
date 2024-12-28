@@ -21,9 +21,10 @@ This project is a Music Production Chatbot powered by OpenAI's GPT-3.5-turbo. Th
    cd music_bot
    ```
 
-2. Install dependencies:
+2. Install dependencies from `requirements.txt`:
    ```bash
-   pipenv install
+   pipenv shell
+   pip install -r requirements.txt
    ```
 
 3. Create a `.env` file:
@@ -32,7 +33,7 @@ This project is a Music Production Chatbot powered by OpenAI's GPT-3.5-turbo. Th
    TELEGRAM_TOKEN=<Your Telegram Bot Token>
    ```
 
-4. Generate `requirements.txt` (if needed):
+4. Generate `requirements.txt` using `Pipfile` (if needed):
    ```bash
    pipenv requirements > requirements.txt
    ```
