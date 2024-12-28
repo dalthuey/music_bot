@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+openai = "*"
+fastapi = "*"
+uvicorn = "*"
+telegram = "*"
+python-dotenv = "*"
+python-telegram-bot = "==21.9"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
